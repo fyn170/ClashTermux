@@ -41,12 +41,16 @@ echo -e $b"➤ "$w" coppying config "$g"config"$w
 cp -r -f config.yaml $HOME/.config/clash/
 echo ""
 sleep 2
+echo -e $b"➤ "$w" coppying config "$g"config"$w
+cp -r -f clash.config $HOME/.config/clash/
+echo ""
+sleep 2
 echo -e $b"➤ "$w" coppying core "$g"core"$w
 cp -r -f core.zip $HOME/.config/clash/
 echo ""
 sleep 2
 echo -e $b"➤ "$w" coppying rule "$g"rule"$w
-cp -r -f core.zip $HOME/.config/clash/
+cp -r -f rule $HOME/.config/clash/
 echo ""
 sleep 2
 echo -e $b"➤ "$w" coppying dashboard "$g"dashboard"$w
