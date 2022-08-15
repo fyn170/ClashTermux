@@ -65,13 +65,15 @@ echo ""
 echo -e $b"➤ "$w" extracting dashboard "$g"dashboard"$w
 unzip dashboard.zip
 echo ""
-
 sleep 2
-cd $HOME/ClashTermux
+
 rm -r -f core.zip
 rm -r -f dashboard.zip
-rm -r -f ClashTermux
 
 sleep 2
+cd
+rm -r -f ClashTermux
+sleep 2
+
 cd .config/clash
 clear
