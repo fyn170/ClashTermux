@@ -73,7 +73,9 @@ rm -r -f dashboard.zip
 sleep 2
 cd
 rm -r -f ClashTermux
+
+cd
+cd .config/clash/
 sleep 2
 
-cd .config/clash
 clear
