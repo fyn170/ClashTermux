@@ -1,11 +1,14 @@
 # Online Config Subscribe
-# Clash For Magisk
+# Clash For Termux
 # Credits [fyn170](https://github.com/fyn170/Clash-Termux)
-tproxy-port: 9898
-mode: 'rule' 
+---
+port: 7890
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7895
+mixed-port: 7893
 allow-lan: true
-unified-delay: true
-bind-address: "*"
+mode: rule
 log-level: info
 ipv6: false
 geodata-mode: true
