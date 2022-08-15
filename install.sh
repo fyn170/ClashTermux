@@ -56,7 +56,6 @@ sleep 2
 echo -e $b"➤ "$w" coppying dashboard "$g"dashboard"$w
 cp -r -f dashboard.zip $HOME/.config/clash/
 echo ""
-
 sleep 2
 
 cd $HOME/.config/clash/
@@ -72,6 +71,6 @@ rm -r -f core.zip
 rm -r -f dashboard.zip
 rm -r -f ClashTermux
 
-clear
-cd
+sleep 2
 cd .config/clash
+clear
