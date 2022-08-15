@@ -67,6 +67,7 @@ unzip dashboard.zip
 echo ""
 
 sleep 2
+cd $HOME/ClashTermux
 rm -r -f core.zip
 rm -r -f dashboard.zip
 rm -r -f ClashTermux
