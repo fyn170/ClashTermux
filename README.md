@@ -10,6 +10,6 @@
 
    - ```bash install.sh```
 
-   - ```cd $HOME/.config/clash```
+   - ```cd .config/clash```
 
    - ```clash```
