@@ -7,7 +7,7 @@ socks-port: 7891
 #redir-port: 7892
 mixed-port: 7893
 #tproxy-port: 7895
-mode: global
+mode: rule
 log-level: info
 ipv6: false
 geodata-mode: true
@@ -19,7 +19,9 @@ dns:
   enable: true
   ipv6: false
   default-nameserver:
-    - '1.1.1.1'
+    - 1.1.1.1
+    - 8.8.8.8
+    - 8.8.4.4
   listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -52,7 +54,6 @@ iptables: {enable: false, inbound-interface: "lo", bypass: []}
 interface-name: ""
 enable-process: false
 profile: {store-selected: true, store-fake-ip: false}
-proxies:
 proxy-providers:
   Server:
     type: file
@@ -90,13 +91,13 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: '300'
 rules:
-  - RULE-SET,18+,Server
-  - RULE-SET,Ads,ADS
-  - RULE-SET,Direct,DIRECT
-  - RULE-SET,Gaming,Server
-  - RULE-SET,Sosmed,Server
-  - RULE-SET,Stream,Server
-  - MATCH,GLOBAL
+  - DOMAIN-KEYWORD,18+,Server
+  - DOMAIN-KEYWORD,Ads,ADS
+  - DOMAIN-KEYWORD,Direct,DIRECT
+  - DOMAIN-KEYWORD,Gaming,Server
+  - DOMAIN-KEYWORD,Sosmed,Server
+  - DOMAIN-KEYWORD,Stream,Server
+  - MATCH,Server
 rule-providers:
   18+:
     type: file
@@ -104,27 +105,27 @@ rule-providers:
     path: "./rule/saru.yaml"
     inteval: "300"
   Ads:
-    type: http
-    behavior: domain
+    type: file
+    behavior: classical
     path: "./rule/ads.yaml"
     interval: "300"
   Direct:
-    type: http
-    behavior: domain
+    type: file
+    behavior: classical
     path: "./rule/direct.yaml"
     interval: "300"
   Gaming:
-    type: http
-    behavior: domain
+    type: file
+    behavior: classical
     path: "./rule/gaming.yaml"
     inteval: "300"
   Sosmed:
-    type: http
-    behavior: domain
+    type: file
+    behavior: classical
     path: "./rule/sosmed.yaml"
     interval: "300"
   Stream:
-    type: http
-    behavior: domain
+    type: file
+    behavior: classical
     path: "./rule/gaming.yaml"
     inteval: "300"
