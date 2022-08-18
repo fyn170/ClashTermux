@@ -33,27 +33,27 @@ echo ""
 
 cd $HOME/ClashTermux
 sleep 2
-echo -e $b"➤ "$w" coppying akun "$g"akun"$w
+echo -e $b"➤ "$w" coppying "$g"akun"$w
 cp -r -f akun $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying config "$g"config"$w
+echo -e $b"➤ "$w" coppying "$g"config"$w
 cp -r -f config.yaml $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying config "$g"config"$w
+echo -e $b"➤ "$w" coppying "$g"config"$w
 cp -r -f clash.config $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying core "$g"core"$w
+echo -e $b"➤ "$w" coppying "$g"core"$w
 cp -r -f core.zip $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying rule "$g"rule"$w
+echo -e $b"➤ "$w" coppying "$g"rule"$w
 cp -r -f rule $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying dashboard "$g"dashboard"$w
+echo -e $b"➤ "$w" coppying "$g"dashboard"$w
 cp -r -f dashboard.zip $HOME/.config/clash/
 echo ""
 sleep 2
@@ -73,9 +73,13 @@ rm -r -f dashboard.zip
 sleep 2
 cd
 rm -r -f ClashTermux
+cd
+echo ""
+sleep 2
 
 cd
-cd .config/clash/
 sleep 2
+cd .config/clash/
+
 
 clear
