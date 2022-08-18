@@ -1,26 +1,26 @@
 payload:
   # Instagram
-  - DOMAIN-SUFFIX,cdninstagram.com
-  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-KEYWORD,cdninstagram.com
+  - DOMAIN-KEYWORD,instagram.com
   # Whatsapp
-  - DOMAIN-SUFFIX,m.me
-  - DOMAIN-SUFFIX,oculus.com
-  - DOMAIN-SUFFIX,oculuscdn.com
-  - DOMAIN-SUFFIX,rocksdb.org
-  - DOMAIN-SUFFIX,whatsapp.com
-  - DOMAIN-SUFFIX,whatsapp.net
-  - DOMAIN-SUFFIX,fna.whatsapp.net,DIRECT
-  - DOMAIN-SUFFIX,wa.me,DIRECT
-  - DOMAIN-SUFFIX,whatsapp-plus.info,DIRECT
-  - DOMAIN-SUFFIX,whatsapp-plus.me,DIRECT
-  - DOMAIN-SUFFIX,whatsapp-plus.net,DIRECT
-  - DOMAIN-SUFFIX,whatsapp.cc,DIRECT
-  - DOMAIN-SUFFIX,whatsapp.com,DIRECT
-  - DOMAIN-SUFFIX,whatsapp.info,DIRECT
-  - DOMAIN-SUFFIX,whatsapp.net,DIRECT
-  - DOMAIN-SUFFIX,whatsapp.org,DIRECT
-  - DOMAIN-SUFFIX,whatsapp.tv,DIRECT
-  - DOMAIN-SUFFIX,whatsappbrand.com,DIRECT
+  - DOMAIN-KEYWORD,m.me
+  - DOMAIN-KEYWORD,oculus.com
+  - DOMAIN-KEYWORD,oculuscdn.com
+  - DOMAIN-KEYWORD,rocksdb.org
+  - DOMAIN-KEYWORD,whatsapp.com
+  - DOMAIN-KEYWORD,whatsapp.net
+  - DOMAIN-KEYWORD,fna.whatsapp.net,DIRECT
+  - DOMAIN-KEYWORD,wa.me,DIRECT
+  - DOMAIN-KEYWORD,whatsapp-plus.info,DIRECT
+  - DOMAIN-KEYWORD,whatsapp-plus.me,DIRECT
+  - DOMAIN-KEYWORD,whatsapp-plus.net,DIRECT
+  - DOMAIN-KEYWORD,whatsapp.cc,DIRECT
+  - DOMAIN-KEYWORD,whatsapp.com,DIRECT
+  - DOMAIN-KEYWORD,whatsapp.info,DIRECT
+  - DOMAIN-KEYWORD,whatsapp.net,DIRECT
+  - DOMAIN-KEYWORD,whatsapp.org,DIRECT
+  - DOMAIN-KEYWORD,whatsapp.tv,DIRECT
+  - DOMAIN-KEYWORD,whatsappbrand.com,DIRECT
   - DST-PORT,3478,DIRECT
   - DST-PORT,4244,DIRECT
   - DST-PORT,5222,DIRECT
@@ -38,29 +38,29 @@ payload:
   - DST-PORT,25566,DIRECT
   
   # TikTok
-  - DOMAIN-SUFFIX,byteoversea.com
-  - DOMAIN-SUFFIX,ibytedtos.com
-  - DOMAIN-SUFFIX,ipstatp.com
-  - DOMAIN-SUFFIX,muscdn.com
-  - DOMAIN-SUFFIX,musical.ly
-  - DOMAIN-SUFFIX,tiktok.com
-  - DOMAIN-SUFFIX,tik-tokapi.com
-  - DOMAIN-SUFFIX,tiktokcdn.com
-  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-KEYWORD,byteoversea.com
+  - DOMAIN-KEYWORD,ibytedtos.com
+  - DOMAIN-KEYWORD,ipstatp.com
+  - DOMAIN-KEYWORD,muscdn.com
+  - DOMAIN-KEYWORD,musical.ly
+  - DOMAIN-KEYWORD,tiktok.com
+  - DOMAIN-KEYWORD,tik-tokapi.com
+  - DOMAIN-KEYWORD,tiktokcdn.com
+  - DOMAIN-KEYWORD,tiktokv.com
   - DOMAIN-KEYWORD,tiktokcdn.com
   - DOMAIN-KEYWORD,v39-id.tiktokcdn.com
   # Facebook
-  - DOMAIN-SUFFIX,messenger.com
-  - DOMAIN-SUFFIX,facebook.com
-  - DOMAIN-SUFFIX,facebook.net
-  - DOMAIN-SUFFIX,fb.com
-  - DOMAIN-SUFFIX,fb.me
-  - DOMAIN-SUFFIX,fbaddins.com
-  - DOMAIN-SUFFIX,fbcdn.net
-  - DOMAIN-SUFFIX,fbsbx.com
-  - DOMAIN-SUFFIX,fbworkmail.com
+  - DOMAIN-KEYWORD,messenger.com
+  - DOMAIN-KEYWORD,facebook.com
+  - DOMAIN-KEYWORD,facebook.net
+  - DOMAIN-KEYWORD,fb.com
+  - DOMAIN-KEYWORD,fb.me
+  - DOMAIN-KEYWORD,fbaddins.com
+  - DOMAIN-KEYWORD,fbcdn.net
+  - DOMAIN-KEYWORD,fbsbx.com
+  - DOMAIN-KEYWORD,fbworkmail.com
   - DOMAIN-KEYWORD,.facebook.
-  - DOMAIN-SUFFIX,facebookmail.com
+  - DOMAIN-KEYWORD,facebookmail.com
   - IP-CIDR,157.240.0.0/16
   - IP-CIDR,103.4.96.0/22
   - IP-CIDR,129.134.0.0/17
@@ -78,14 +78,14 @@ payload:
   - IP-CIDR,69.63.176.0/20
   - IP-CIDR,74.119.76.0/22
   # Line
-  - DOMAIN-SUFFIX,lin.ee
-  - DOMAIN-SUFFIX,line.me
-  - DOMAIN-SUFFIX,line.naver.jp
-  - DOMAIN-SUFFIX,line-apps.com
-  - DOMAIN-SUFFIX,line-cdn.net
-  - DOMAIN-SUFFIX,line-scdn.net
-  - DOMAIN-SUFFIX,nhncorp.jp
-  - DOMAIN-SUFFIX,naver.jp
+  - DOMAIN-KEYWORD,lin.ee
+  - DOMAIN-KEYWORD,line.me
+  - DOMAIN-KEYWORD,line.naver.jp
+  - DOMAIN-KEYWORD,line-apps.com
+  - DOMAIN-KEYWORD,line-cdn.net
+  - DOMAIN-KEYWORD,line-scdn.net
+  - DOMAIN-KEYWORD,nhncorp.jp
+  - DOMAIN-KEYWORD,naver.jp
   - IP-CIDR,103.2.28.0/22
   - IP-CIDR,119.235.224.0/21
   - IP-CIDR,119.235.232.0/23
@@ -104,12 +104,12 @@ payload:
   - IP-CIDR,147.92.128.0/17
   - IP-CIDR,203.104.144.0/21
   # Telegram
-  - DOMAIN-SUFFIX,telegra.ph
-  - DOMAIN-SUFFIX,telegram.org
-  - DOMAIN-SUFFIX,t.me
-  - DOMAIN-SUFFIX,tdesktop.com
-  - DOMAIN-SUFFIX,telegram.me
-  - DOMAIN-SUFFIX,telesco.pe
+  - DOMAIN-KEYWORD,telegra.ph
+  - DOMAIN-KEYWORD,telegram.org
+  - DOMAIN-KEYWORD,t.me
+  - DOMAIN-KEYWORD,tdesktop.com
+  - DOMAIN-KEYWORD,telegram.me
+  - DOMAIN-KEYWORD,telesco.pe
   - IP-CIDR,91.108.4.0/22
   - IP-CIDR,91.108.8.0/22
   - IP-CIDR,91.108.12.0/22
@@ -118,16 +118,16 @@ payload:
   - IP-CIDR,91.108.56.0/22
   - IP-CIDR,149.154.160.0/20
   # Twitter
-  - DOMAIN-SUFFIX,pscp.tv
-  - DOMAIN-SUFFIX,periscope.tv
-  - DOMAIN-SUFFIX,t.co
-  - DOMAIN-SUFFIX,twimg.co
-  - DOMAIN-SUFFIX,twimg.com
-  - DOMAIN-SUFFIX,twitpic.com
-  - DOMAIN-SUFFIX,twitter.com
-  - DOMAIN-SUFFIX,vine.co
+  - DOMAIN-KEYWORD,pscp.tv
+  - DOMAIN-KEYWORD,periscope.tv
+  - DOMAIN-KEYWORD,t.co
+  - DOMAIN-KEYWORD,twimg.co
+  - DOMAIN-KEYWORD,twimg.com
+  - DOMAIN-KEYWORD,twitpic.com
+  - DOMAIN-KEYWORD,twitter.com
+  - DOMAIN-KEYWORD,vine.co
   - DOMAIN-KEYWORD,twitter
-  - DOMAIN-SUFFIX,twttr.net
-  - DOMAIN-SUFFIX,twttr.com
-  - DOMAIN-SUFFIX,twitter.jp
+  - DOMAIN-KEYWORD,twttr.net
+  - DOMAIN-KEYWORD,twttr.com
+  - DOMAIN-KEYWORD,twitter.jp
   # MATCH is not necessary here  
