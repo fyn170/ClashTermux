@@ -38,6 +38,7 @@
 - kemudian buka termux kembali
 - lalu ketik **```clash```**
 - buka browser kemudian ketik **``` http://localhost:9090/ui ```** untuk membuka dashboard
+- setelah masuk dashboard klik **``GLOBAL``** lalu klik **``server``**
 ---
 ###
 - [Fynn](https://github.com/fyn170/ClashTermux)
