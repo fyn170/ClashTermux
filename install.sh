@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 null="> /dev/null 2>&1"
 g="\033[1;32m"
