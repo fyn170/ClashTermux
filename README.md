@@ -5,7 +5,7 @@
 ---
 - Buka Terminal Termux, salin satu per satu script dibawah ini untuk menginstall.
 
-  ```
+```
   - pkg update && pkg upgrade -y
 
   - pkg install git -y
@@ -22,7 +22,7 @@
   
   - cd .config/clash
   
-  ```
+```
 ### Cara setting akun
 ---
 - ketik **``mc``** pada terminal termux
