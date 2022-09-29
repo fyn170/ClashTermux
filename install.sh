@@ -75,17 +75,14 @@ echo ""
 sleep 2
 cd .config/clash/
 unzip core.zip
-echo ""
 rm -rf core.zip
 sleep 2
 unzip dashboard.zip
-echo ""
 rm -rf dashboard.zip
 clear
-
+cd
 sleep 2
 cd
-echo ""
 sleep 2
 
 cd .config/clash/
