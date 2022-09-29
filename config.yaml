@@ -70,13 +70,13 @@ proxy-groups:
 - name: 18+
   type: select
   proxies:
-  - DIRECT
   - REJECT
+  - Server
 - name: ADS
   type: select
   proxies:
-  - DIRECT
   - REJECT
+  - Server
 - name: Chat
   type: select
   strategy: consistent-hashing
