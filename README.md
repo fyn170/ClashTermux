@@ -37,6 +37,7 @@
 - masukkan *`` ``127.0.0.1`` pada bagian proxy dan port 7893``*
 - kemudian buka termux kembali
 - lalu ketik **```clash```**
+- buka browser kemudian ketik **``` http://localhost:9090/ui ```** untuk membuka dashboard
 ---
 ###
 - [Fynn](https://github.com/fyn170/ClashTermux)
