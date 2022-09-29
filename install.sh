@@ -69,7 +69,8 @@ sleep 2
 
 cd
 sleep 2
-cd
+echo ""
+
 sleep 2
 cd .config/clash/
 unzip core.zip
