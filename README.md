@@ -21,7 +21,6 @@
   - cd
   
   - cd .config/clash
-  
 ```
 ### Cara setting akun
 ---
