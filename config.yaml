@@ -104,32 +104,36 @@ rule-providers:
   18+:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/fyn170/ClashTermux/main/rule/saru.yaml"
+    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/saru.yaml"
     path: "./rule/saru.yaml"
     inteval: "86400"
   Ads:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/fyn170/ClashTermux/main/rule/ads.yaml"
+    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/ads.yaml"
     path: "./rule/ads.yaml"
     interval: "86400"
   Direct:
-    type: file
+    type: http
     behavior: classical
+    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/direct.yaml"
     path: "./rule/direct.yaml"
     interval: "300"
   Gaming:
-    type: file
+    type: http
     behavior: classical
+    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/gaming.yaml"
     path: "./rule/gaming.yaml"
     inteval: "300"
   Sosmed:
-    type: file
+    type: http
     behavior: classical
+    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/sosmed.yaml"
     path: "./rule/sosmed.yaml"
     interval: "300"
   Stream:
-    type: file
+    type: http
     behavior: classical
+    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/stream.yaml"
     path: "./rule/gaming.yaml"
     inteval: "300"
