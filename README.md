@@ -28,17 +28,18 @@
 - ketik **``mc``** pada terminal termux
 - kemudian klik akun
 - edit dan masukkan akun di *``akun.yaml``*
-- ( **``Note: Core ``premium only`` jadi , Support semua protokol kecuali Vless``** )
+- ( **``Note: Core premium only jadi , Support semua protocol kecuali Vless``** )
 - setelah selesai memasukkan akun lalu save dan keluar **``mc``**
 
 ### Cara menjalankan
 ---
 - setting APN dulu
-- masukkan *`` ``127.0.0.1`` pada bagian proxy dan port 7893``*
+- masukkan *`` ``127.0.0.1`` pada bagian proxy dan port 7890``*
 - kemudian buka termux kembali
-- lalu ketik **```clash```**
+- lalu ketik **```clash```** untuk menjaankan
 - buka browser kemudian ketik **``` http://localhost:9090/ui ```** untuk membuka dashboard
 - setelah masuk dashboard klik **``GLOBAL``** lalu klik **``server``**
+- cara stop tekan **``ctrl + c``**
 ---
 ###
 - [Fynn](https://github.com/fyn170/ClashTermux)
