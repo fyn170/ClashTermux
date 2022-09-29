@@ -1,15 +1,42 @@
-# ClashForTermux
-  ## Install
-   - ```pkg update && pkg upgrade -y```
+## ClashForTermux (No-Root)
+- Yang ingin merasakan tools openclash tanpa harus **root** smartphone (hp)
 
-   - ```pkg install git -y```
+### Cara install
+---
+- Buka Terminal, salin script dibawah ini untuk menginstall.
 
-   - ```git clone https://github.com/fyn170/ClashTermux.git```
+  ```
+  - pkg update && pkg upgrade -y
 
-   - ```cd ClashTermux```
+  - pkg install git -y
 
-   - ```bash install.sh```
+  - pkg install mc -y
 
-   - ```cd .config/clash```
+  - git clone https://github.com/fyn170/ClashTermux.git
 
-   - ```clash```
+  - cd ClashTermux
+
+  - bash install.sh
+ 
+  - cd
+  
+  - cd .config/clash
+  
+  ```
+### Cara setting akun
+---
+- ketik **``mc``** pada terminal termux
+- kemudian klik akun
+- edit dan masukkan akun di *``akun.yaml``*
+- ( **``Note: Core ``premium only`` jadi , Support semua protokol kecuali Vless``** )
+- setelah selesai memasukkan akun lalu save dan keluar **``mc``**
+
+### Cara menjalankan
+---
+- setting APN dulu
+- masukkan *`` ``127.0.0.1`` pada bagian proxy dan port 7893``*
+- kemudian buka termux kembali
+- lalu ketik **```clash```**
+---
+###
+- [Fynn](https://github.com/fyn170/ClashTermux)
