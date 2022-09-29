@@ -68,10 +68,6 @@ cd
 echo ""
 sleep 2
 
-cd
-sleep 2
-echo ""
-
 sleep 2
 cd .config/clash/
 unzip core.zip
@@ -80,6 +76,8 @@ sleep 2
 unzip dashboard.zip
 rm -rf dashboard.zip
 clear
+
+#!/bin/bash
 cd
 echo ""
 cd
