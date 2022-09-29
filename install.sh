@@ -81,4 +81,11 @@ sleep 2
 unzip dashboard.zip
 echo ""
 rm -rf dashboard.zip
+clear
 
+sleep 2
+cd
+echo ""
+sleep 2
+
+cd .config/clash/
