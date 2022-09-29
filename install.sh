@@ -75,11 +75,5 @@ rm -rf core.zip
 sleep 2
 unzip dashboard.zip
 rm -rf dashboard.zip
-clear
-
-#!/bin/bash
-cd
-echo ""
-cd
-echo ""
 cd .config/clash/
+clear
