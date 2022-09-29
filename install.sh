@@ -13,8 +13,8 @@ echo ""
 echo -e $b"➤ "$w" installing ... "$g"clash"$w
 pkg install clash
 echo ""
-echo -e $b"➤ "$w" installing ... "$g"nano"$w
-pkg install nano
+echo -e $b"➤ "$w" installing ... "$g"mc"$w
+pkg install mc
 echo ""
 echo -e $b"➤ "$w" installing ... "$g"unzip"$w
 pkg install unzip
