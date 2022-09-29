@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/bash
 
 null="> /dev/null 2>&1"
 g="\033[1;32m"
@@ -6,6 +6,7 @@ r="\033[1;31m"
 b="\033[1;34m"
 w="\033[0m"
 sleep 2
+echo ""
 echo -e $b"➤ "$w"Clash For Termux Non Root"
 echo ""
 echo -e $b"➤ "$w" installing dependencies ..."
