@@ -3,7 +3,7 @@
 
 ### Cara install
 ---
-- Buka Terminal, salin script dibawah ini untuk menginstall.
+- Buka Terminal Termux, salin satu per satu script dibawah ini untuk menginstall.
 
   ```
   - pkg update && pkg upgrade -y
