@@ -99,7 +99,7 @@ rules:
   - DOMAIN-KEYWORD,Gaming,Server
   - DOMAIN-KEYWORD,Sosmed,Server
   - DOMAIN-KEYWORD,Stream,Server
-  - MATCH,Server
+  - MATCH,GLOBAL
 rule-providers:
   18+:
     type: http
