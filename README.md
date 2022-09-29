@@ -34,7 +34,8 @@
 ### Cara menjalankan
 ---
 - setting APN dulu
-- masukkan *`` 127.0.0.1 pada bagian proxy dan port 7890``*
+- APN ( **internet** )
+- Proxy **``127.0.0.1 dan port 7890``**
 - kemudian buka termux kembali
 - lalu ketik **```clash```** untuk menjaankan
 - buka browser kemudian ketik **``` http://localhost:9090/ui ```** untuk membuka dashboard
