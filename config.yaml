@@ -1,6 +1,6 @@
 # Online Config Subscribe
 # Clash For Termux
-# Credits [fyn170](https://github.com/fyn170/Clash-Termux)
+# Credits [fyn170](https://github.com/fyn170/ClashTermux)
 ---
 port: 7890
 socks-port: 7891
@@ -15,47 +15,36 @@ unified-delay: true
 geodata-mode: true
 external-controller: 0.0.0.0:9090
 external-ui: dashboard
-tcp-concurrent: false
 secret: ""
+bind-address: "*"
+ipv6: false
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
+profile:
+  store-selected: true
+  store-fake-ip: true
 dns:
+  nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  - https://dns.adguard.com/dns-query
+  - https://dns-google.com/dns-query
+  - tls://dns.adguard.com
+  - tls://dns-google.com/
   enable: true
   ipv6: false
-  default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-    - 8.8.4.4
-  listen: 0.0.0.0:1053
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  fake-ip-filter: []
-  nameserver:
-    - 1.1.1.1
-  fallback: []
-  fallback-filter:
-    geoip: false 
-    geoip-code: 'ID'
-    geosite: []
-    domain: []
-    ipcidr: []
-tun:
-  enable: false
-  stack: system
-  dns-hijack: ['any:53', 'tcp://any:53']
-  auto-route: true
-  auto-detect-interface: true
-sniffer:
-  enable: true
-  sniffing:
-    - tls
-    - http
-  port-whitelist: []
-  skip-domain: []
-  force-domain: []
-iptables: {enable: false, inbound-interface: "lo", bypass: []}
-interface-name: ""
-enable-process: false
-profile: {store-selected: true, store-fake-ip: false}
+  listen: 127.0.0.1:7874
+  fake-ip-filter:
+  - "+.*"
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
 proxy-providers:
   Server:
     type: file
