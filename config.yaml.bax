@@ -1,1 +1,99 @@
-
+# Online Config Subscribe
+# Clash For Termux
+# Credits [fyn170](https://github.com/fyn170/ClashTermux)
+---
+port: 7890
+socks-port: 7891
+#redir-port: 7892
+mixed-port: 7893
+#tproxy-port: 7895
+mode: rule
+log-level: info
+allow-lan: true
+unified-delay: true
+geodata-mode: true
+external-controller: 0.0.0.0:9090
+external-ui: dashboard
+secret: ""
+bind-address: "*"
+ipv6: false
+tun:
+  enable: true
+  stack: system
+  dns-hijack:
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
+profile:
+  store-selected: true
+  store-fake-ip: true
+dns:
+  nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  - https://dns.adguard.com/dns-query
+  - https://dns-google.com/dns-query
+  - tls://dns.adguard.com
+  - tls://dns-google.com/
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  listen: 127.0.0.1:7874
+  fake-ip-filter:
+  - "+.*"
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+proxy-providers:
+  Server:
+    type: file
+    behavior: classical
+    path: "./akun/akun.yaml"
+    health-check:
+      enable: true
+      interval: 99
+      url: http://www.gstatic.com/generate_204
+    interval: "300"
+proxy-groups:
+- name: 18+
+  type: select
+  proxies:
+  - REJECT
+  - Server
+- name: ADS
+  type: select
+  proxies:
+  - REJECT
+  - Server
+- name: Chat
+  type: select
+  strategy: consistent-hashing
+  disable-udp: false
+  proxies:
+  - DIRECT
+  - Server
+- name: Server
+  type: url-test
+  strategy: consistent-hashing
+  disable-udp: false
+  use:
+  - Server
+  url: http://www.gstatic.com/generate_204
+  interval: '300'
+rules:
+  # Sosmed
+  - DOMAIN-KEYWORD,facebook,Server
+  - DOMAIN-KEYWORD,instagram,Server
+  - DOMAIN-KEYWORD,google,Server
+  - DOMAIN-KEYWORD,line,Server
+  - DOMAIN-KEYWORD,speedtest,Server
+  - DOMAIN-KEYWORD,telegram,Server
+  - DOMAIN-KEYWORD,tiktok,Server
+  - DOMAIN-KEYWORD,twitter,Server
+  - DOMAIN-KEYWORD,whatsapp,Server
+  # Stream
+  - DOMAIN-KEYWORD,disney,Server
+  - DOMAIN-KEYWORD,netflix,Server
+  - DOMAIN-KEYWORD,vidio,Server
+  - DOMAIN-KEYWORD,youtube,Server
+  - MATCH,Server
