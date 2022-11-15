@@ -8,7 +8,7 @@ socks-port: 7891
 mixed-port: 7893
 #tproxy-port: 7895
 mode: rule
-log-level: info
+log-level: silent
 allow-lan: true
 unified-delay: true
 geodata-mode: true
@@ -51,16 +51,15 @@ proxy-providers:
     path: "./akun/akun.yaml"
     health-check:
       enable: true
-      interval: 99
+      interval: '120'
       url: http://www.gstatic.com/generate_204
-    interval: "300"
 proxy-groups:
 - name: 18+
   type: select
   proxies:
   - REJECT
   - Server
-- name: ADS
+- name: Ads
   type: select
   proxies:
   - REJECT
@@ -79,49 +78,25 @@ proxy-groups:
   use:
   - Server
   url: http://www.gstatic.com/generate_204
-  interval: '300'
+  interval: '120'
 rules:
-  - DOMAIN-KEYWORD,18+,Server
-  - DOMAIN-SUFFIX,Ads,ADS
-  - DOMAIN-KEYWORD,Direct,DIRECT
-  - DOMAIN-KEYWORD,Gaming,Server
-  - DOMAIN-KEYWORD,Sosmed,Server
-  - DOMAIN-KEYWORD,Stream,Server
-  - MATCH,GLOBAL
-rule-providers:
-  18+:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/saru.yaml"
-    path: "./rule/saru.yaml"
-    inteval: "86400"
-  Ads:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/ads.yaml"
-    path: "./rule/ads.yaml"
-    interval: "86400"
-  Direct:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/direct.yaml"
-    path: "./rule/direct.yaml"
-    interval: "300"
-  Gaming:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/gaming.yaml"
-    path: "./rule/gaming.yaml"
-    inteval: "300"
-  Sosmed:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/sosmed.yaml"
-    path: "./rule/sosmed.yaml"
-    interval: "300"
-  Stream:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/fyn170/conf-cfm/main/confs/rule/stream.yaml"
-    path: "./rule/gaming.yaml"
-    inteval: "300"
+  # ISP
+  - DOMAIN-KEYWORD,[axis;telkomsel;myxl,indosat,tri,],Server
+  # Porn
+  - DOMAIN-KEYWORD,[bokep;cerdas;pornhub;xnxx],REJECT
+  # Sosmed
+  - DOMAIN-KEYWORD,facebook,Server
+  - DOMAIN-KEYWORD,instagram,Server
+  - DOMAIN-KEYWORD,line,Server
+  - DOMAIN-KEYWORD,speed,Server
+  - DOMAIN-KEYWORD,telegram,Server
+  - DOMAIN-KEYWORD,tiktok,Server
+  - DOMAIN-KEYWORD,twitter,Server
+  - DOMAIN-KEYWORD,whatsapp,Server
+  # Stream
+  - DOMAIN-KEYWORD,disney,Server
+  - DOMAIN-KEYWORD,google,Server
+  - DOMAIN-KEYWORD,netflix,Server
+  - DOMAIN-KEYWORD,vidio,Server
+  - DOMAIN-KEYWORD,youtube,Server
+  - MATCH,Server
