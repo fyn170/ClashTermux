@@ -25,10 +25,6 @@ mkdir -p $HOME/.config/clash
 echo ""
 mkdir -p $HOME/.config/clash/akun
 echo ""
-mkdir -p $HOME/.config/clash/core
-echo ""
-mkdir -p $HOME/.config/clash/rule
-echo ""
 mkdir -p $HOME/.config/clash/dashboard
 echo ""
 cd $HOME/ClashTermux
@@ -41,16 +37,12 @@ echo -e $b"➤ "$w" coppying "$g"config"$w
 cp -r -f config.yaml $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying "$g"config"$w
-cp -r -f clash.config $HOME/.config/clash/
+echo -e $b"➤ "$w" coppying "$g"cache.db"$w
+cp -r -f cache.db $HOME/.config/clash/
 echo ""
 sleep 2
-echo -e $b"➤ "$w" coppying "$g"core"$w
-cp -r -f core.zip $HOME/.config/clash/
-echo ""
-sleep 2
-echo -e $b"➤ "$w" coppying "$g"rule"$w
-cp -r -f rule $HOME/.config/clash/
+echo -e $b"➤ "$w" coppying "$g"Country.mmdb"$w
+cp -r -f Country.mmdb $HOME/.config/clash/
 echo ""
 sleep 2
 echo -e $b"➤ "$w" coppying "$g"dashboard"$w
@@ -58,7 +50,8 @@ cp -r -f dashboard.zip $HOME/.config/clash/
 echo ""
 sleep 2
 
-rm -r -f core.zip
+rm -r -f cache.db
+rm -r -f Country.mmdb
 rm -r -f dashboard.zip
 
 sleep 2
@@ -70,8 +63,6 @@ sleep 2
 
 sleep 2
 cd .config/clash/
-unzip core.zip
-rm -rf core.zip
 sleep 2
 unzip dashboard.zip
 rm -rf dashboard.zip
