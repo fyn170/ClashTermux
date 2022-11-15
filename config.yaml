@@ -81,7 +81,7 @@ proxy-groups:
   interval: '120'
 rules:
   # ISP
-  - DOMAIN-KEYWORD,[axis;telkomsel;myxl,indosat,tri,],Server
+  - DOMAIN-KEYWORD,[axis;telkomsel;myxl;indosat;tri],Server
   # Porn
   - DOMAIN-KEYWORD,[bokep;cerdas;pornhub;xnxx],REJECT
   # Sosmed
