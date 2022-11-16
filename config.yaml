@@ -21,17 +21,21 @@ tun:
   enable: true
   stack: system
   dns-hijack:
-  - tcp://9.9.9.9:53
-  - tcp://9.9.9.10:53
+  - tcp://8.8.8.8:53
+  - tcp://8.8.4.4:53
 profile:
   store-selected: true
   store-fake-ip: true
 dns:
   nameserver:
-  - 9.9.9.9
-  - 149.112.112.112
-  - https://dns.quad9.net/dns-query
-  - tls://dns.quad9.net
+  - 8.8.8.8
+  - 8.8.4.4
+  - 94.140.14.14
+  - 94.140.15.15
+  - https://dns.adguard-dns.com/dns-query
+  - https://dns.google/dns-query
+  - tls://dns.adguard-dns.com
+  - tls://dns.google
   enable: true
   ipv6: false
   enhanced-mode: redir-host
@@ -40,8 +44,10 @@ dns:
   fake-ip-filter:
   - "+.*"
   default-nameserver:
-  - 9.9.9.9
-  - 149.112.112.112
+  - 8.8.8.8
+  - 8.8.4.4
+  - 94.140.14.14
+  - 94.140.15.15
 proxy-providers:
   Server:
     type: file
